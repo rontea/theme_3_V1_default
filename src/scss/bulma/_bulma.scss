@@ -1,0 +1,45 @@
+/* ============================
+  Bulma 
+============================ */ 
+
+/* import bulma all */
+@import "node_modules/bulma/bulma";
+
+/* ============================
+  Bulma Custom
+============================ */ 
+
+// REMOVE if you don't need it!
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "node_modules/bulma/sass/utilities/_all";
+@import "node_modules/bulma/sass/base/_all";
+@import "node_modules/bulma/sass/elements/button";
+@import "node_modules/bulma/sass/elements/container";
+@import "node_modules/bulma/sass/elements/title";
+@import "node_modules/bulma/sass/form/_all";
+@import "node_modules/bulma/sass/components/navbar";
+@import "node_modules/bulma/sass/layout/hero";
+@import "node_modules/bulma/sass/layout/section";

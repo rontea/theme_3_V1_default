@@ -1,0 +1,162 @@
+$link-color: $primary;
+$link-color-hover: $secondary;
+$link-color-visited: $warning;
+
+
+/* Wrap */
+.wrap {
+    width: 100%;
+    color: #CCCCCC;
+  
+  }
+/* Body Wrap*/
+  .wrap-body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* footer */
+  footer {
+      
+    clear: both;
+    margin-top: 2px;
+  
+    &.footer-backgroundColor {
+      background-color: #000000;
+    }
+  
+    &.footer-dimension {
+      width:100%;
+      height: 100px;
+    }
+  
+  }
+  /* Typography */
+  .big-letter {
+    font-size: 10em;
+  }
+
+  .big-sub-letter{
+    font-size: 2em;
+  }
+
+  .h-sub {
+    font-size: .75em;
+    padding-top:none;
+    margin-top: none;
+  }
+
+  .h-sub-text {
+    font-size: 1em;
+    
+  }
+
+  
+  .font-family-list {
+    font-weight: 500;
+    padding-left: 10px;
+    
+  }
+  
+  .styleguide-header {
+    font-weight: 500;
+    text-align: left;
+    font-variant: normal;
+  }
+  
+  /* color list */
+  .color-list {
+    
+    margin-bottom: 10px;
+  
+    .rounded-demo {
+  
+      min-height: 30px;
+      max-height: 30px;
+      max-width: 100px;
+      max-height: 90px;
+      width: 100%;
+      height: 90px;
+      border: #000000 solid 1px;
+      border-radius: 50%;
+     
+    }
+    
+  }
+  
+  .table-list {
+    table {
+      margin-top:10px;
+    }
+  }
+
+
+
+/* Text List and Links */
+
+  .text-list {
+
+    &.text-link .text-list-circle {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-top: 4px;
+      
+
+      &.bg-normal {
+        background-color:  $link-color;
+      }
+
+      &.bg-active {
+        background-color: darken($link-color-hover, 40%);
+      }
+
+      &.bg-visited {
+        background-color: $link-color-visited;
+      }
+
+      &.bg-hover {
+        background-color: $link-color-hover;
+      }
+    }
+
+    a {
+      
+      &.normal {
+        color: $link-color;
+        text-decoration: none;
+      }
+
+      &:active {
+        color: darken($link-color-hover, 40%);
+      }
+    
+
+    }
+
+    .hover {
+      a{ 
+        &:hover {
+          color: $link-color-hover;
+          
+        }
+      }
+
+    }
+    .visited {
+      a {
+        
+        &:visited {
+          color: $link-color-visited;
+        }
+
+      }
+    }
+   
+
+
+  }
+
+  .max-hr {
+    width: 50%;
+  }

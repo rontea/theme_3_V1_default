@@ -1,0 +1,16 @@
+/* Link Mixin */
+@mixin theme_3-link-state {
+    &:link, &:visited {
+      color: $link-color;
+      text-decoration: none;
+    }
+  
+    &:hover {
+      color: $link-color-hover;
+      text-decoration: underline;
+    }
+  
+    &:active {
+      color: darken($link-color-hover, 20%);
+    }
+}
